@@ -19,7 +19,7 @@ function App() {
 
 //genero la lista per i complited task
    const complitedList = compliteElem.map((curTask, index) =>{ return <li key={index}>
-    <p>{curTask.title} <span>{curTask.state}</span></p>
+    <p><strong>{curTask.title}</strong> <span className="my-bg-green">{curTask.state}</span></p>
     <p>priority: {curTask.priority}</p>
     <p>est.time: {curTask.estimatedTime}</p>
    </li>})
@@ -28,7 +28,7 @@ function App() {
 
 //genero la lista per gli uncomplited task
   const uncomplitedList = uncompliteElem.map((curTask, index) => { return <li key={index}>
-    <p>{curTask.title} <span>{curTask.state}</span></p>
+    <p><strong>{curTask.title}</strong> <span>{curTask.state}</span></p>
     <p>priority: {curTask.priority}</p>
     <p>est.time: {curTask.estimatedTime}</p>
   </li>
@@ -38,12 +38,12 @@ function App() {
   return (
     <>
     <h1>task manager</h1>
-    <p className="bold-txt">current task ({uncomplitedList.length})</p>
+    <p className="bold-txt"><strong>current task ({uncomplitedList.length})</strong></p>
     <ul>{uncomplitedList}</ul>
     
 
     <hr />
-    <p>complited task ({complitedList.length})</p>
+    <p><strong>complited task ({complitedList.length})</strong></p>
     <ul>{complitedList}</ul>
     </>
   )
