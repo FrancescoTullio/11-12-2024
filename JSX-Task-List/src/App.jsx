@@ -38,7 +38,7 @@ function App() {
   return (
     <>
     <h1>task manager</h1>
-    <p>current task ({uncomplitedList.length})</p>
+    <p className="bold-txt">current task ({uncomplitedList.length})</p>
     <ul>{uncomplitedList}</ul>
     
 
