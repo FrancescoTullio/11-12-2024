@@ -4,13 +4,19 @@ h1 {
 }
 
 span {
-    background-color: orange;
     color: white;
     padding: 5px 15px;
 }
 
-.my-bg-green{
+.completed{
     background-color: greenyellow;
-    color: white;
-    padding: 5px 15px;
+}
+
+
+.backlog {
+    background-color: red;
+}
+
+.in_progress {
+    background-color: orange;
 }
